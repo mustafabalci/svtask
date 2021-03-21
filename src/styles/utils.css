@@ -40,16 +40,20 @@
     margin-left: 0.5rem;
 }
 
-.ml-1 {
-    margin-left: 0.5rem;
-}
-
 .ml-2 {
     margin-left: 1rem;
 }
 
 .ml-3 {
     margin-left: 1.5rem;
+}
+
+.mt-1 {
+    margin-top: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
 }
 
 .my-0 {
@@ -59,6 +63,14 @@
 
 .d-flex {
     display: flex;
+}
+
+.d-inline-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .flex-gap-1 {
@@ -79,4 +91,8 @@
 
 .font-weight-bold {
     font-weight: 700;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
