@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Buttons.module.css";
 
-const Button = ({ type, text }) => {
+const Button = ({ type, text, ...rest }) => {
   const getBgColor = () => {
     let bgColor;
 
@@ -16,7 +16,7 @@ const Button = ({ type, text }) => {
         bgColor = "#5E72E4";
         break;
       default:
-        bgColor = "#FFFFFF";
+        bgColor = "#11CDEF";
         break;
     }
 
@@ -24,7 +24,11 @@ const Button = ({ type, text }) => {
   };
 
   return (
-    <div className={styles.Buttons} style={{ backgroundColor: getBgColor() }}>
+    <div
+      className={styles.Buttons}
+      style={{ backgroundColor: getBgColor() }}
+      {...rest}
+    >
       {text}
     </div>
   );
