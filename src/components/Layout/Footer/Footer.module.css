@@ -1,0 +1,25 @@
+.SocialIcons {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.TopText {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.45px;
+}
+
+.BottomText {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #32325D;
+}
+
+.FooterLink {
+    color: #8898AA;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    text-decoration: none;
+}

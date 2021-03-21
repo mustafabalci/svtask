@@ -1,0 +1,5 @@
+.LayoutTop {
+    height: 580px;
+    background: linear-gradient(340.03deg, #8DDAD5 8.42%, #00CDAC 91.45%);;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
