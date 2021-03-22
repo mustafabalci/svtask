@@ -1,0 +1,16 @@
+.WarnBox {
+    display: flex;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    flex-direction: column;
+}
+
+.Wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+}

@@ -17,6 +17,24 @@ export default function postsReducer(state = initialState, action) {
       return { ...state, loading: false, failed: true };
     case actions.SELECT_POST:
       return { ...state, selected: action.payload };
+    case actions.UPDATE_POST:
+      return { ...state };
+    case actions.UPDATE_POST_SUCCESS:
+      const updatedPosts = state.posts.map((post) =>
+        post.id === action.payload.id ? action.payload : post
+      );
+      return { ...state, posts: updatedPosts, failed: false };
+    case actions.UPDATE_POST_FAILURE:
+      return { ...state, loading: false, failed: true };
+
+    case actions.DELETE_POST:
+      return { ...state };
+    case actions.DELETE_POST_SUCCESS:
+      return {
+        ...state,
+        posts: state.posts.filter((post) => post.id !== action.payload.id),
+        failed: false,
+      };
     default:
       return state;
   }

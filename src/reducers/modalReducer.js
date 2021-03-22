@@ -9,7 +9,7 @@ export default function modalReducer(state = initialState, action) {
     case actions.SHOW_MODAL:
       return { show: true };
     case actions.HIDE_MODAL:
-      return { show: false, content: null };
+      return { show: false };
     default:
       return state;
   }
