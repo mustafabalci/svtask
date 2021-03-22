@@ -4,10 +4,12 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Content from "./Content/Content";
 import Modal from "../Modal/Modal";
+import WarnBox from "../WarnBox/WarnBox";
 
 const Layout = ({ children }) => {
   return (
-    <div className="position-relative" style={{ overflowY: "hidden" }}>
+    <div className="position-relative">
+      <WarnBox />
       <Modal />
       <div className={styles.LayoutTop}>
         <Header />

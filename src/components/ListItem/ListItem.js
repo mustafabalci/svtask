@@ -5,6 +5,7 @@ import { openModal } from "../../actions/modalActions";
 import { selectedPost } from "../../actions/postActions";
 import { useHistory } from "react-router-dom";
 import styles from "./ListItem.module.css";
+import { openWarnBox } from "../../actions/warnActions";
 
 const ListItem = ({ dispatch, order, post }) => {
   const history = useHistory();
@@ -12,6 +13,11 @@ const ListItem = ({ dispatch, order, post }) => {
   const editPost = () => {
     dispatch(selectedPost(post));
     dispatch(openModal());
+  };
+
+  const deletePost = () => {
+    dispatch(selectedPost(post));
+    dispatch(openWarnBox());
   };
 
   return (
@@ -25,7 +31,7 @@ const ListItem = ({ dispatch, order, post }) => {
           onClick={() => history.push(`/post-detail/${post.id}`)}
         />
         <Button text="DÜZENLE" type="success" onClick={editPost} />
-        <Button text="SİL" type="warn" />
+        <Button text="SİL" type="warn" onClick={deletePost} />
       </div>
     </div>
   );
