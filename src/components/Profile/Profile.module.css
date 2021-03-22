@@ -1,0 +1,39 @@
+.ProfileTitle {
+    font-size: 28px;
+    margin: 0;
+}
+
+.City {
+    color: #32325D;
+}
+
+.LabelWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.LabelWrapper > p {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.LabelWrapper > p:nth-child(odd) {
+    width: 15%;
+}
+
+.LabelWrapper > p:nth-child(even) {
+    width: 85%;
+}
+
+.Label {
+    color: #ADB5BD;
+    font-size: 14px;
+    margin: 0;
+}
+
+.ShowMore {
+    color: #4A90E2;
+    letter-spacing: -0.3px;
+    cursor: pointer;
+}
