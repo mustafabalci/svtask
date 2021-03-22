@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { openModal } from "../../actions/modalActions";
 import { selectedPost } from "../../actions/postActions";
 import { useHistory } from "react-router-dom";
+import styles from "./ListItem.module.css";
 
 const ListItem = ({ dispatch, order, post }) => {
   const history = useHistory();
@@ -14,7 +15,7 @@ const ListItem = ({ dispatch, order, post }) => {
   };
 
   return (
-    <div className="d-flex align-items-center py-3 px-3">
+    <div className={styles.ListItem}>
       <div className="font-weight-bold">{order}</div>
       <p className="my-0 ml-2">{post.body.substring(0, 75)}</p>
       <div className="d-flex ml-auto flex-gap-1">

@@ -1,0 +1,9 @@
+.ListItem {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.ListItem:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
