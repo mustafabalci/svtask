@@ -19,7 +19,10 @@ const PostDetail = ({ match, posts, loading }) => {
       ) : (
         <>
           <h1>{post.title}</h1>
-          <a onClick={() => history.push(`/profile-detail/${post.userId}`)}>
+          <a
+            onClick={() => history.push(`/profile-detail/${post.userId}`)}
+            className="cursor-pointer"
+          >
             Yazar sayfasına git
           </a>
           <p>{post.body}</p>
