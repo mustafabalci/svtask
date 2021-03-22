@@ -11,7 +11,6 @@ const Home = ({ dispatch, loading, posts, failed }) => {
   const renderPosts = () => {
     if (loading) return <p>İçerikler yükleniyor...</p>;
     if (failed) return <p>Veri alınırken bir hata meydana geldi.</p>;
-    console.log(posts);
     return posts.map((post) => (
       <ListItem key={post.id} order={post.id} post={post} />
     ));
