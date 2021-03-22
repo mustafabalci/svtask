@@ -36,6 +36,18 @@
     padding-right: 1.5rem;
 }
 
+.pb-1 {
+    padding-bottom: 0.5rem;
+}
+
+.pb-2 {
+    padding-bottom: 1rem;
+}
+
+.pb-3 {
+    padding-bottom: 1.5rem;
+}
+
 .ml-1 {
     margin-left: 0.5rem;
 }
@@ -85,6 +97,10 @@
     justify-content: center;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
+
 .color-primary {
     color: #00CDAC;
 }
@@ -95,4 +111,18 @@
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #E9ECEF;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.paragraph {
+    color: #525F7F;
+    line-height: 27px;
+    letter-spacing: -0.3px;
 }
